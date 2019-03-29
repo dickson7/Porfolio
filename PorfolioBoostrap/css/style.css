@@ -85,7 +85,25 @@
   color: var(--blue-navy);
 }
 
+/*
+*************************************
+        | SKILLS
+*************************************
+*/
 
+.skills-item{
+margin-bottom: 24px;
+}
 
+.skills-item .text{
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
 
+.skills-item .progress .progress-bar{
+  height: 10px;
+border-radius: 5px;
+vertical-align: middle;
+align-self: center;
 
+}
