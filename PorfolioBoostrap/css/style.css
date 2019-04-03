@@ -107,3 +107,24 @@ vertical-align: middle;
 align-self: center;
 
 }
+
+/*
+*************************************
+        | section porfolio
+*************************************
+*/
+
+.card-container .card{
+  max-width: 360px;
+  margin-top: 16px;
+}
+
+.card-container .card i{
+ font-size: 80px;
+ color: var(--blue-navy)
+}
+.card-container .card h5{
+  margin-top: 12px;
+  margin-bottom: 8px;
+  opacity: 0.8;
+}
