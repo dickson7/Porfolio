@@ -1,0 +1,881 @@
+// Vars
+@import "libs/_variables";
+  
+// Fonts
+@import "libs/_fonts";
+
+// icons
+@import "elements/_icons";
+
+
+
+
+body {
+  font-family: 'latoregular';
+  color: $color-body;
+  position: relative;
+  &::before {
+    content: "";
+    border-bottom: 100vh solid $color-gris;
+    border-left: 0 solid transparent;
+    border-right: 306px solid transparent;
+    height: 0;
+    width: 44vw;
+    position: absolute;
+  }
+}
+
+// Inicio
+
+.marca p {
+  font-family: 'latoblack';
+  color: $color-marca;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.titulo-pro h1 {
+  font-family: 'latolight';
+  font-size: 35px;
+}
+.precio p {
+  font-family: 'latoblack';
+  color: $color-primary;
+  font-size: 30px;
+}
+.col-md{
+  height: 100vh;
+  width: 100vh;
+}
+
+
+
+// Controles de navegacion product
+#carousel .carousel-inner img{
+  //max-height: 600px;
+  object-fit:contain; 
+}
+
+#carousel {
+    position: relative;
+    top: -50px;
+    height: 600px;
+}
+
+#carousel .overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row{
+  height: 600px;
+  
+}
+
+.black{
+    width: 50px;
+    margin-top: 230px;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+    &:hover {
+    width: 50px;
+    border-radius:50%;
+    background: rgba(#000,.1);
+    }
+
+    &:active {
+    transform: scale(.90);
+    }
+}
+
+.black img{
+    height: 50px;
+    width: 50px; 
+    border-radius:50%;
+    border: 1px solid $color-marca;
+    background: $color-blanco;
+}
+.gray img{
+    height: 50px;
+    width: 50px;  
+    border-radius:50%;  
+}
+
+.gray{
+     
+  border-radius:50%;
+ 
+    width: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+    &:hover {
+    width: 50px;
+    border-radius:50%;
+    background: rgba(#000,.03);
+    }
+
+    &:active {
+    transform: scale(.90);
+    }
+}
+
+.left_arrow,{
+    margin-top: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:active {
+    transform: scale(1.01);
+    }
+}
+.right_arrow{
+    margin-top: 10px;
+    margin-left: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:active {
+    transform: scale(.99);
+    }
+}
+  
+.color-font{
+  color:$color-verde;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+  .nav-link{
+    padding-left: 0;
+    border: 0;
+    color: #535353;
+    &.active,
+    &:hover {
+      font-weight: bold;
+      position: relative;
+      &::before {
+        content: "";
+        border-bottom: 1px solid $color-primary;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+      }
+    }
+  }
+}
+
+.accesorios {
+  * {
+    display: inline-block;
+  }
+  p {
+    margin-right: 5%;
+  }
+  img {
+    margin-right: 10px;
+  }
+}
+
+  
+
+.img-especif{
+    width: 50px;
+    text-align: center;
+
+}
+  
+//sombra
+.sombra{
+  width: 180px;
+  height: 10px;
+  //background-color:  transparent;
+  box-shadow: 170px 80px 40px rgba(#000,.5);
+  border-radius: 50%; 
+}
+// sombra>
+
+
+// Buttons
+
+.btn-comprar {
+  display: inline-block;
+  background: $color-primary;
+  line-height: 2.5em;
+  padding: 0 2.5em;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 2.5em;
+  border: 1px solid rgba(#000,.2);
+
+  &:hover {
+    color: #fff;
+     border: 1px solid rgba(#000,.2);
+    text-decoration: none;
+    background: darken($color-primary,5);
+    cursor: pointer;
+  }
+  &:active {
+    transform: scale(.95);
+    background: $color-primary;
+  }
+}
+.btn-outline-success{
+  width: 45%;
+    padding: 10px;
+    margin: 7px;
+  border-radius: 2.5em;
+  color: #7dce94;
+  background-color: transparent;
+  background-image: none;
+  border-color: #7dce94;
+  &:hover{
+  background-color: $color-primary;
+  }
+  
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    color: #fff;
+    background-color: rgba($color-primary, .9);
+    border-color: $color-primary;
+  }
+}
+.btn-success{
+width: 45%;
+    padding: 10px;
+    margin: 7px;
+  border-radius: 2.5em;
+  color: #fff;
+  background-color: $color-primary;
+  background-image: none;
+  border-color: #7dce94;
+  &:hover{
+  //background-color:rgba($color-primary, .7);
+  background-color: darken($color-primary, 10);
+  }
+  
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    color: #fff;
+    background-color: rgba($color-primary, .9);
+    border-color: $color-primary;
+  }
+}
+
+//responsive
+
+@media (max-width: 700px) { 
+  .btn-success, .btn-outline-success {
+    width: 100%;
+  }
+  .item.active::before {
+    color: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid #7dce94;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    background: transparent;
+    margin-bottom: 15px;
+}
+.item.active::after{
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-color: red;
+}
+
+#descripcion{
+      margin-bottom: 10px;
+}
+
+.left_arrow, .right_arrow, .sombra {
+    visibility: hidden;
+}
+
+.overlay {
+    background: rbga(#000, 0.9);
+}
+#carousel {
+    position: relative;
+    top: -50px;
+    height: 500px;
+}
+
+.carousel {
+    position: relative;
+    top: -50px;
+    height: 380px;
+}
+
+
+body {
+    font-family: 'latoregular';
+    color: #636363;
+    position: relative;
+}
+body::before {
+    content: "";
+    border-bottom: 55vh solid #f6f5f3;
+    border-left: 0 solid transparent;
+    border-right: 304px solid transparent;
+    height: 0;
+    width: 100vw;
+    position: absolute;
+}
+
+.select-color{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    display: inherit;
+    top: 185px;
+}
+.black {
+    width: 50px;
+    margin-top: 0px;
+    margin-right: 15px;
+
+  }
+
+  .accesorios p {
+    margin-right: 60%;
+}
+
+.nav-return a {
+  visibility: hidden;
+}
+
+
+}
+
+@media (max-width: 330px) { 
+
+#carousel {
+    position: relative;
+    top: -50px;
+    height: 400px;
+}
+
+
+.right_arrow {
+    margin-top: 0px; 
+    margin-left: 0px;
+  }
+
+
+.select-color{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    display: inherit;
+    top: 85px;
+}
+ .accesorios p {
+    margin-right: 50%;
+}
+
+
+#carousel-compra {
+ position: relative;
+   top: -75px;
+    height: 300px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+
+}
+
+// media />
+
+
+
+
+
+
+
+.labels{
+  color: #49505759;
+}
+
+
+// Buttons >
+
+
+
+
+
+
+
+//Stylus Compra
+
+#carousel-compra .carousel-inner img{
+  height: 400px;
+  //max-width: 70vh;
+  object-fit:contain; 
+}
+
+#marca-compra p {
+  font-family: 'latoblack';
+  color: $color-marca;
+  margin-bottom: 0;
+  text-transform: uppercase;
+   font-size: 15px;
+}
+
+#marca-compra span {
+  font-family: 'latolight';
+  color: $color-marca;
+  margin-bottom: 0;
+   font-size: 14px;
+}
+
+#marca-compra .titulo-pro h1 {
+  font-family: 'latolight';
+  font-size: 20px;
+}
+#marca-compra .precio p{
+  font-family: 'latoblack';
+  color: $color-primary;
+  font-size: 30px;
+}
+
+#marca-compra img{
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  
+  border-radius:50%;
+  border: 1px solid $color-marca;
+  background: $color-blanco;
+}
+
+.line{
+  width: 120px;
+  border: .5px solid $color-marca;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.line-2{
+    width: 70px;
+    border-bottom: 2px solid #7dce94;
+    margin: 1em auto;
+    //margin-bottom: 25px;
+    //margin-top: 5px;
+    //margin-left: 40%;
+}
+
+.carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,.9);
+}
+
+
+.carousel-indicators .active {
+    background-color:  rgba(0,0,0,.3);
+}
+.detalle-compra .nav-item{
+  width: 50%;
+  position: relative;
+}
+
+.nav-pills .nav-link {
+    border-radius: 50%;
+    border: 1px solid $color-verde;
+    box-shadow: 0px 0px 0px 3px $color-blanco inset;
+    color: $color-verde;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    margin: 20px auto 0px auto;
+    width: 43px;
+    height: 43px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: $color-blanco;
+    background-color: $color-verde;
+    box-shadow: 0px 0px 0px 3px $color-blanco inset;
+}
+.detalle-compra{
+  position: relative;
+
+  &:before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    border-bottom: 1px solid #7dce94;
+    margin:3em auto;
+    left: 0;
+    right: 0;
+      }
+}
+
+.nav-return{
+  display: flex;
+  
+}
+.nav-return a {
+    color: $color-verde;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+   
+}
+.nav-return a:hover {
+     color: $color-verde;
+     text-decoration: none;
+     transform: scale(1.01);
+}
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    text-decoration: none;
+    background-clip: padding-box;
+    box-shadow: 0px 2px #f2f2f2;
+    border: 0;
+    border-bottom: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #7acf92;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(14, 208, 127, 0.09);
+}
+
+.cvc{
+  cursor: pointer;
+  position: relative;
+&:before {
+        content:"";
+        background:url("../recursos/fotografias/img_cvc.png"); 
+        display: block;
+
+
+
+        bottom: 15px;
+    left: -25px;
+    background-size: 100%;
+    height: 155px;
+    width: 220px;
+        visibility:hidden;
+        position: absolute;   
+        transition: all .3s;
+    }
+    &:hover:before {
+       visibility: visible;
+    } 
+
+}
+
+.img-tarjeta{
+  //padding: 10px 20px 10px 25px;
+  background-image: url('../recursos/svg/Mastercard.svg');
+  background-size: 25px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: right;
+}
+
+.menu img{
+  cursor: pointer;
+}
+
+// Stylus Compra >
+
+
+// Modal <
+.modal-content {
+    position: relative;
+    
+    display: flex;
+    margin: 1em auto;
+    flex-direction: column;
+    width:300px;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    text-align: center;
+}
+.modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 3rem;
+    
+}
+
+.modal-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: center;
+    padding: 1rem;
+    border-top: none;
+}
+
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3rem;
+    border-bottom: none;
+    position: relative;
+  }
+
+.modal-img {
+    position: absolute;
+    top: -135px;
+    right: 10px;
+
+}
+
+.modal-text{
+  position: absolute;
+    bottom: 0px;
+    left: 90px;
+
+}
+
+.menu{
+  padding: 10px;
+}
+
+.close-modal{
+    position: absolute;
+    right: 5px;
+    top: -25px;
+    background: #504949;
+    border-radius: 50%;
+    padding: 15px;
+    color: white;
+}
+
+// Modal />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//SCSS variables and mixins
+
+$color__main: #444;
+$color__active: grey;
+$background__active: rgba(black, 0.8);
+$width__tabs-side: 150px;
+$breakpoint: 800px;
+
+@mixin tab-active() {
+  //background: $color__main;
+  color: $background__active;
+  border-bottom: 2px solid $color-primary;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  background: transparent;
+}
+
+
+
+
+h2 {
+  margin: 2em auto 0;
+  text-align: center;
+}
+
+.tabbed-content {
+  background: #fff;
+  //box-shadow: 1px 1px 6px #ccc;
+  max-width: 600px;
+  //padding: 1em;
+  margin: 1em auto;  
+}
+.tabs {
+  ul {
+    margin: 0;
+    padding: 0 0 1em 0;
+    font-weight: bold;
+    li {
+      //background: $color-primary;
+      a {
+        text-decoration: none;
+        color: $color-marca;
+        padding: 0em 4em 0em 0em;
+        font-family: 'latoregular';
+        font-size: 20px;
+        &:hover,
+        &.active {
+          @include tab-active();
+        }
+      }
+    } 
+  }
+}
+.item {
+  margin-bottom: 5px; 
+  &::before {
+    cursor: pointer;
+    font-weight: bold;
+    //background: $color-primary;
+    padding: .5em;
+    display: block;
+  }
+  &.active {
+    &::before {
+      @include tab-active();
+    }
+    .item-content {
+      //padding: 1em;
+      -webkit-transition: opacity 0.3s ease-in-out;
+      -moz-transition: opacity 0.3s ease-in-out;
+      -o-transition: opacity 0.3s ease-in-out;
+      -ms-transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+}
+@media all and (min-width: $breakpoint ) {
+  .item {
+    &.active {
+      .item-content {
+        padding-top: 0;
+      }  
+    }
+  }
+  .tabs-side {
+    .tabs {
+      li {
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+/* 
+The project specific CSS starts here
+This is the minimum CSS that you will need in order for this to work
+*/
+
+// Accordion for small screens (mobile first principle)
+.tabbed-content {
+  .tabs {
+    display: none;
+  }
+  .item {
+    min-height: 2em; // We need a minimum height for each item or else the accordion buttons would dissapear
+    &::before {
+      content: attr(data-title); // Instead of polluting the HTML with a duplicate set of tabs, we get the accordion using the data-title attribute.
+    }
+    .item-content { // We hide the inactive content with zero opacity instead of "display:none" because this allows us to apply transition effects if we want. 
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+    }
+    &.active {
+      .item-content {
+        opacity: 1;
+        visibility: visible;
+        height:auto;
+      }
+    }
+  }  
+}
+
+
+// Tabs for larger screens
+@media all and (min-width: $breakpoint) {
+  .tabbed-content {
+    .tabs {
+      display: block;
+      li {
+        display: inline-block;
+        a {
+          display: block;
+        }
+      }
+    }
+    .item {
+      min-height: 0;
+      &::before {
+        display: none;
+      }
+    }
+    // Tabs on the side (works only on big screens)
+    &.tabs-side {
+      .tabs {
+        width: $width__tabs-side;
+        float: left;
+        li {
+          display: block;
+        }
+      }
+      .item {
+        margin-left: $width__tabs-side;
+      }
+    }  
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+.paisaje{
+  width: 600px;
+  height: 350px;
+  border: 10px dotted blue;
+  margin: 1em auto;
+  padding: 1em;
+  background-image: url("../img/bird.png"), url("../img/landscape.jpg");
+  background-size: 50%, cover;
+  background-repeat: no-repeat;
+  background-position: bottom right, 0 0;
+  /* backgraund:
+        url("../img/bird.png") bottom right / 50% no-repeat,
+        url("../img/landscape.jpg") 0 0 / cover; 
+
+
+  */
+}
