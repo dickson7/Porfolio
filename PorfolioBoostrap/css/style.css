@@ -52,6 +52,13 @@
   width: 90%;
   height: 80%;
 }
+.img-container::before{
+background-color: #2196f3;
+width: 90%;
+  height: 80%;
+}
+
+
 .main-info .container .txt-col .text-container {
   margin: 20px auto 0 auto;
   width: 90%;
@@ -127,4 +134,8 @@ align-self: center;
   margin-top: 12px;
   margin-bottom: 8px;
   opacity: 0.8;
+}
+
+.sect-title{
+  line-height: 2.5
 }
