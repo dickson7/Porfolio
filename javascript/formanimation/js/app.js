@@ -51,7 +51,7 @@ function validateEmail(email){
 
 function nextSlide(parent, nextForm){
     parent.classList.add("innactive");
-    parent.classList.add("active");
+    parent.classList.remove("active");
     nextForm.classList.add("active");
 }
 
