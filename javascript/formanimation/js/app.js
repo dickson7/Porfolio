@@ -1,5 +1,5 @@
 function animatedForm(){
-    const arrows = document.querySelectorAll(".fa-arrow-circle-down");
+    const arrows = document.querySelectorAll(".fa-arrow-circle-right");
 
     arrows.forEach(arrow => {
         arrow.addEventListener("click", () => {
