@@ -17,6 +17,9 @@
         | HEADER
 *************************************
 */
+body{
+  transition: all 0.7s ease;
+}
 .header-area .main-menu,
 .header-area .main-menu, .dropdown-menu {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.01)),var(--orange-coral);
@@ -179,5 +182,5 @@ align-self: center;
 
 footer{
   height: 50px;
-  background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.4)), var(--orange-coral);
+  /*background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.4)), var(--orange-coral);*/
 }
