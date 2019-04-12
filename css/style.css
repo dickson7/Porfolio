@@ -19,7 +19,7 @@
 */
 .header-area .main-menu,
 .header-area .main-menu, .dropdown-menu {
-  background: var(--orange-coral);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.01)),var(--orange-coral);
   box-shadow: 0 3px 16 0 rgba(0, 0, 0, .1);
 }
 .header-area .main-menu .navbar {
@@ -94,6 +94,28 @@ width: 90%;
   color: var(--blue-navy);
 }
 
+.typing{
+  position: relative;
+}
+.typing::after{
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 35px;
+  border-right: 2px solid white;
+  animation: blink 0.5s infinite ease;
+}
+@keyframes blink{
+  0%{
+       opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+
+
+
 /*
 *************************************
         | SKILLS
@@ -142,11 +164,20 @@ align-self: center;
   line-height: 2.5
 }
 .sect-porfolio{
-  box-shadow: 0 20px 80px 0 rgba(153, 153, 153, .3);
+  
+  
+}
+.card{
+  margin-bottom: 20px;
 }
 
+/*
+*************************************
+        | section footer
+*************************************
+*/
 
 footer{
   height: 50px;
-  background: var(--orange-coral);
+  background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.4)), var(--orange-coral);
 }
