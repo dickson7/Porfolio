@@ -141,3 +141,12 @@ align-self: center;
 .sect-title{
   line-height: 2.5
 }
+.sect-porfolio{
+  box-shadow: 0 20px 80px 0 rgba(153, 153, 153, .3);
+}
+
+
+footer{
+  height: 50px;
+  background: var(--orange-coral);
+}
