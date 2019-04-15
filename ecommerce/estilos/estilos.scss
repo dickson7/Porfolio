@@ -840,6 +840,7 @@ This is the minimum CSS that you will need in order for this to work
 
 
 // Tabs for larger screens
+
 @media all and (min-width: $breakpoint) {
   .tabbed-content {
     .tabs {
