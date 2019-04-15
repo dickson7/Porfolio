@@ -37,6 +37,18 @@ body{
   font-weight: 600;
 }
 
+.main-info .social-mw a {
+  font-size: 30px;
+  text-decoration: none;
+  padding: 5px;
+  transition: all 0.5s ease;
+}
+.main-info .social-mw a:hover {
+  font-size: 35px;
+  text-decoration: none;
+  transition: all 0.7s ease;
+}
+
 
 .main-info {
   position: relative;
@@ -83,8 +95,9 @@ width: 90%;
   margin-bottom: 8px;
 }
 .main-info .container .txt-col .text-container ul.basic-info > li > i{
-  margin-right: 4px;
-  color: var(--blue-navy);
+  margin-right: 10px;
+    color: var(--blue-navy);
+    font-size: 20px;
 }
 .main-info .container .txt-col .text-container ul.social-nw {
   padding-left: 0;
