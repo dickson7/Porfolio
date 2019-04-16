@@ -58,6 +58,7 @@ nav{
 
 .content-description{
     display: flex;
+   
 }
 
 .content-description i{
@@ -67,7 +68,7 @@ nav{
 .content-description img{
     width: 150px;
     height: 150px;
-    margin-right: 50px;
+    margin: 0 20px 30px;
 }
 .content h4,
 .content a {
@@ -97,3 +98,23 @@ nav{
         transform: scale(1.1);
         transition: all 0.5s;
 }
+
+@media screen and (max-width:480px){
+    .content-description{
+        flex-wrap: wrap-reverse;
+       
+    }
+    .content-description img{
+        width: 150px;
+        height: 150px;
+        margin: 0 130px 0px;
+    }
+    .content h4 {
+        text-align: center;
+    margin: 20px;
+    line-height: 1.5;
+    text-decoration: none;
+    color: black;
+    
+}
+} 
