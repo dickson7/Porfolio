@@ -64,6 +64,11 @@ nav{
     font-size: 50px;
     margin-right: 50px;
 }
+.content-description img{
+    width: 150px;
+    height: 150px;
+    margin-right: 50px;
+}
 .content h4,
 .content a {
     margin: 10px;
