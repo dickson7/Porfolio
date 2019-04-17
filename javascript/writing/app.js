@@ -1,4 +1,4 @@
-const texts = ['indomable', 'salvaje', 'temible'];
+const texts = ['Cornwall', 'fishing', 'Port', 'Mackerel and Cornish'];
 let count = 0;
 let index = 0;
 let currentText = '';
