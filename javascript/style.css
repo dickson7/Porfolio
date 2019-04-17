@@ -34,19 +34,20 @@ nav{
     left: 50%;
     border-radius: 10px;
     transform: translateX(-50%) rotate(0);
-    animation: loading 5s linear;
+    animation: loading 1s linear;
+    
 }
 
 
 @keyframes loading{
-    0%{
-        background: transparent;
+    from{
+       
         transform: translate(-50%) rotate(0deg);
     }
    
-    100%{
-        background-color: black;
-        transform: translate(-50%) rotate(740deg);
+    to{
+       
+        transform: translate(-50%) rotate(1440deg);
     }
 }
 
