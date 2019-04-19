@@ -84,7 +84,7 @@ nav{
     
 }
 .content-description img{
-    width: 150px;
+    width: 150px !important;
     height: 150px;
     margin: 0 20px 30px;
 }
