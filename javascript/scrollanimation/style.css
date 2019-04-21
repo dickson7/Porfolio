@@ -35,9 +35,32 @@ header h1{
     left: 0%;
 }
 
-.nube-plane{
+.nube-paper2{
     position: absolute;
-    height: 250px;
-    right: 0%;
+    height: 150px;
+    left: 70%;
+    top: 10%;
+    transform: translateX(50%);
+    animation: loading 4s infinite;
+}
+.nube-paper3{
+    position: absolute;
+    height: 150px;
+    left: 30%;
+    top: 5%;
+    transform: translateX(20%);
+    animation: loading 3s infinite;
+}
 
+
+@keyframes loading{
+0%{
+    transform: translatex(-50%);
+}
+50%{
+    transform: translatex(-80%);
+}
+100%{
+    transform: translateX(-50%);
+}
 }
