@@ -65,4 +65,22 @@ header p {
 header span {
   color: var(--white-egg);
 }
+
+/*
+*************************************
+        | MAIN-BANNER
+*************************************
+*/
+.img-porfolio {
+  width: 100vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 85px;
+  padding-bottom: 105px;
+}
+
+.img-porfolio img {
+  width: 25%;
+  height: 330px;
+}
 /*# sourceMappingURL=stylus.css.map */
