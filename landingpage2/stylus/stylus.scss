@@ -13,6 +13,90 @@
   $gray-primary: #6a6a6a;
   $orange-primary: #e74c3c;
 
+
+  h3 {
+    font-family: 'source_sans_proregular';
+    font-size: 1.714rem;
+    line-height: 2.5rem;
+    color: #fff;
+  }
+  h1, h2, h3 {
+    font-weight: 300;
+    margin: 0;
+  }
+  
+  h1 {
+    font-family: 'open_sansbold';
+    font-size: 5.143rem;
+    line-height: 5.5rem;
+    color: #fff;
+    letter-spacing: .4rem;
+  }
+
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    min-width: 150px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-size: 0.8125rem;
+    border-radius: 0px;
+    margin-top: 20px;
+    transition: .5s;
+    border: 1px solid #e74c3c;
+    font-family: 'open_sansbold';
+    padding: 0.8rem 3rem;
+    transition: all 0.6s;
+    border-radius: 2px;
+  }
+  .btn:hover{
+    color: #fff;
+    transform: scale(1.001);
+    font-size: 0.8925rem;
+  }
+
+  .btn-secon{
+    border: 1px solid #fff;
+  }
+  .btn-secon:hover{
+    background: #e74c3c;
+    color: #fff;
+  }
+
+  .btn-prima{
+    background: #e74c3c;
+  }
+
+.separador{
+  background: #e74c3c;
+  width: 10px;
+  height: 10px;
+  margin: 20px auto;
+  border-radius: 50%;
+  position: relative;
+}
+.separador::after{
+content: "";
+position: absolute;
+width: 90px;
+height: 1px;
+background: #F5F5F5;
+top:5px;
+left: 20px;
+}
+.separador::before{
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 1px;
+  background: #F5F5F5;
+  top:5px;
+  right: 20px;
+}
+
+
   /*
 *************************************
         | HEADER
@@ -70,6 +154,43 @@ header span{
         | MAIN-BANNER
 *************************************
 */
+
+.main-banner{
+  background: url(../recursos/img/Background.png) no-repeat center center;
+  height: 100vh;
+  background-size: cover;
+  
+}
+.home{
+  height: 100%;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  display: block;
+  color: white;
+}
+
+.text-home p {
+  color: #fff;
+  max-width: 60%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  font-size: 1.125rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
