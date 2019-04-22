@@ -9,17 +9,33 @@
     --white-egg: #F5F5F5;
     --white: #fff;
   }
-    
+  
+  $gray-medio: #797979;
+  $white-egg:#F5F5F5;
   $gray-primary: #6a6a6a;
   $orange-primary: #e74c3c;
 
-
+  h4 {
+    font-family: 'open_sanssemibold';
+    font-size: 1.286rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
   h3 {
     font-family: 'source_sans_proregular';
     font-size: 1.714rem;
     line-height: 2.5rem;
     color: #fff;
   }
+
+  h2 {
+    font-family: 'source_sans_probold';
+    font-size: 2.571rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+  }
+
   h1, h2, h3 {
     font-weight: 300;
     margin: 0;
@@ -96,7 +112,12 @@ left: 20px;
   right: 20px;
 }
 
-
+.separador3{
+  width: 45px;
+  height: 2px;
+  margin: 20px auto;
+  background: #6a6a6a;
+}
   /*
 *************************************
         | HEADER
@@ -159,6 +180,7 @@ header span{
   background: url(../recursos/img/Background.png) no-repeat center center;
   height: 100vh;
   background-size: cover;
+  position: relative;
   
 }
 .home{
@@ -167,6 +189,21 @@ header span{
   padding-bottom: 250px;
   display: block;
   color: white;
+  
+}
+.scrooldown{
+  position: absolute;
+  right: 48%;
+  bottom: -10px;
+  width: 40px;
+  height: 40px;;
+  border-radius: 50%;
+  background:whitesmoke;
+  cursor: pointer;
+}
+.scrooldown a{
+  font-size: 25px;
+  color: $orange-primary;
 }
 
 .text-home p {
@@ -178,16 +215,55 @@ header span{
 }
 
 
+ /*
+*************************************
+        | Feature
+*************************************
+*/
+
+.icon-feature{
+  border: 1px solid lightgrey;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  margin: 20px auto;
+  transition: all 1s;
+ 
+}
+.icon-feature:hover{
+  transform: rotate(45deg);
+  border: 1px solid $orange-primary;
+}
+.icon-feature i{
+  color: $orange-primary;
+  transition: all 1s;
+}
+.icon-feature i:hover{
+  transform: rotate(-45deg);
+
+} 
+.p-tb {
+  padding-top: 85px;
+  padding-bottom: 105px;
+}
+.whoweare p {
+  padding: 10px;
+  line-height: 2rem;
+  font-size: 0.875rem;
+  font-family: 'open_sanssemibold';
+}
 
 
-
-
-
-
-
-
-
-
+ /*
+*************************************
+        | section history
+*************************************
+*/
+.title-history{
+  border-left: 6px solid $orange-primary;
+  padding: 0 30px;
+  margin-bottom: 70px;
+}
 
 
 
@@ -207,10 +283,33 @@ header span{
 
 
 
+ /*
+*************************************
+        | section services
+*************************************
+*/
+
+.services{
+  background: #202020;
+}
+.services h2{
+  color: $white-egg;
+}
+.services h4{
+  color: $orange-primary;
+}
+.services p{
+  color: $gray-medio;
+  font-family: 'source_sans_proregular';
+  line-height: 2rem;
+  font-size: 0.875rem;
+}
 
 
-
-
+.services img{
+  width: 100%;
+  height: 100%;
+}
 
 
 
@@ -222,4 +321,33 @@ header span{
 }
 .main-team ul li {
   text-align: center;
+}
+
+
+
+
+  /*
+*************************************
+        | RESPOSIVE
+*************************************
+*/
+@media screen and (max-width:480px){
+  h1 {
+    font-size: 2.143rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.4rem;
+  }
+
+  h3 {
+    font-size: 1.0rem;
+    line-height: 2.5rem;
+  }
+  .text-home p {
+    font-size: 0.7rem;
+}
+.scrooldown {
+  right: 45%;
+  bottom: -10px;
+}
+
 }
