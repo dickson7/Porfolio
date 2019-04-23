@@ -512,6 +512,10 @@ header span {
         | section pricing
 *************************************
 */
+.princing .separador {
+  margin-bottom: 70px;
+}
+
 /*
 *************************************
         | section team
