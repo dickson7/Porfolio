@@ -9,6 +9,10 @@
   --white: #fff;
 }
 
+body {
+  color: #797979;
+}
+
 .p-tb {
   padding: 85px 0px 105px 0px;
 }
@@ -461,6 +465,8 @@ header span {
   right: -15%;
   top: 75px;
   z-index: 3;
+  -webkit-box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
 }
 
 /*
@@ -474,13 +480,12 @@ header span {
   background-size: cover;
 }
 
-.rect h2, p {
+.rect h2 {
   color: #F5F5F5;
 }
 
 .rect {
   width: 15%;
-  margin-bottom: 20px;
 }
 
 .icon-rect {
@@ -492,6 +497,14 @@ header span {
   font-size: 30px;
   line-height: 2.2;
   color: #F5F5F5;
+  margin-bottom: 30px;
+}
+
+.rect p {
+  color: #F5F5F5;
+  font-family: 'source_sans_proregular';
+  line-height: 2rem;
+  font-size: 0.775rem;
 }
 
 /*
