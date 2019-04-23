@@ -15,6 +15,11 @@
   $gray-primary: #6a6a6a;
   $orange-primary: #e74c3c;
 
+  .p-tb {
+    padding: 85px 0px 105px 0px ;
+  }
+
+
   h4 {
     font-family: 'open_sanssemibold';
     font-size: 1.286rem;
@@ -246,10 +251,7 @@ header span{
   transform: rotate(-45deg);
 
 } 
-.p-tb {
-  padding-top: 85px;
-  padding-bottom: 105px;
-}
+
 .whoweare p {
   padding: 10px;
   line-height: 2rem;
@@ -369,6 +371,109 @@ header span{
 }
 
 
+/*
+*************************************
+        | section case study
+*************************************
+*/
+.case-study{
+  padding-bottom: 85px;
+}
+.case-study h2{
+  color: $gray-medio;
+}
+
+.case.study p{
+  color: $gray-medio;
+  font-family: 'source_sans_proregular';
+  line-height: 2rem;
+  font-size: 0.875rem;
+  padding-bottom: 30px;
+}
+
+.icon-case{
+  height: 120px;;
+  position: relative;
+  line-height: 5;
+  color: white;
+  font-size: 18px;
+}
+.icon-case::before{
+  content: "";
+  position: absolute;
+  left: 45%;
+  top: 15%;
+  width: 60px;
+  height: 60px;
+  background: $orange-primary;
+  z-index: -1;
+  transform: rotate(45deg)
+}
+.case-study p{
+  color: $gray-medio;
+  font-family: 'source_sans_proregular';
+  line-height: 2rem;
+  font-size: 0.875rem;
+  padding: 20px 100px;
+}
+
+.carousel-indicators li {
+  width: 5px;
+  height: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color:$gray-medio;
+}
+.carousel-indicators .active {
+  background-color:$orange-primary;
+}
+.carousel-indicators {
+  bottom: -40px;
+}
+.img-case{
+  position: relative;
+}
+.cases{
+  background: $white-egg;
+  position: absolute;
+  padding: 50px 0;
+  width: 600px;
+  height: 600px;
+  right: -15%;
+  top: 75px;
+  z-index: 3;
+}
+
+/*
+*************************************
+        | section status
+*************************************
+*/
+
+.status{
+    background: url(../recursos/img/PutYourImage3.png) no-repeat center center;
+    height: 350px;
+    background-size: cover;
+   
+}
+.rect h2,p{
+  color: $white-egg;
+}
+
+.rect{
+  width: 15%;
+  margin-bottom: 20px;
+}
+.icon-rect{
+  margin: auto;
+  border: 1px solid $white-egg;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  font-size: 30px;
+  line-height: 2.2;
+  color: $white-egg;
+}
 
 
 
@@ -376,8 +481,22 @@ header span{
 
 
 
+/*
+*************************************
+        | section pricing
+*************************************
+*/
 
 
+
+
+
+
+/*
+*************************************
+        | section team
+*************************************
+*/
 
 .main-team ul {
   display: flex;
