@@ -240,16 +240,25 @@ header span {
 *************************************
 */
 .icon-feature {
-  border: 1px solid lightgrey;
   width: 70px;
   height: 70px;
   line-height: 70px;
   margin: 20px auto;
+  position: relative;
+}
+
+.icon-feature::before {
+  content: "";
+  position: absolute;
+  border: 1px solid lightgrey;
+  height: 100%;
+  width: 100%;
+  right: 0;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-.icon-feature:hover {
+.icon-feature:hover::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   border: 1px solid #e74c3c;
@@ -257,13 +266,6 @@ header span {
 
 .icon-feature i {
   color: #e74c3c;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.icon-feature i:hover {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
 }
 
 .whoweare p {
@@ -514,6 +516,27 @@ header span {
 */
 .princing .separador {
   margin-bottom: 70px;
+}
+
+.cards {
+  margin: 0 auto;
+}
+
+.card {
+  padding: 0 20px;
+  max-width: 400px;
+}
+
+.precio {
+  border: 10px solid rgba(121, 121, 121, 0.3);
+  width: 150px;
+  height: 150px;
+  margin: 30px auto;
+  border-radius: 50%;
+}
+
+.precio h2 {
+  margin-top: 30px;
 }
 
 /*

@@ -233,26 +233,31 @@ header span{
 */
 
 .icon-feature{
-  border: 1px solid lightgrey;
+  //border: 1px solid lightgrey;
   width: 70px;
   height: 70px;
   line-height: 70px;
   margin: 20px auto;
-  transition: all 1s;
- 
+  
+ position: relative;
 }
-.icon-feature:hover{
+.icon-feature::before{
+  content: "";
+  position: absolute;
+  border: 1px solid lightgrey;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  transition: all 1s;
+}
+.icon-feature:hover::before{
+  
   transform: rotate(45deg);
   border: 1px solid $orange-primary;
 }
 .icon-feature i{
   color: $orange-primary;
-  transition: all 1s;
 }
-.icon-feature i:hover{
-  transform: rotate(-45deg);
-
-} 
 
 .whoweare p {
   padding: 10px;
@@ -485,10 +490,6 @@ header span{
 }
 
 
-
-
-
-
 /*
 *************************************
         | section pricing
@@ -499,6 +500,23 @@ header span{
 margin-bottom: 70px;
 }
 
+.cards {
+  margin: 0 auto;
+}
+.card {
+  padding: 0 20px;
+  max-width: 400px;
+}
+.precio {
+  border: 10px solid rgba($gray-medio, 0.3);
+  width: 150px;
+  height: 150px;
+  margin: 30px auto;
+  border-radius: 50%;
+}
+.precio h2{
+  margin-top: 30px;
+}
 
 
 
