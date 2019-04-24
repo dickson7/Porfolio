@@ -13,6 +13,7 @@
   $gray-medio: #797979;
   $white-egg:#F5F5F5;
   $gray-primary: #6a6a6a;
+  $gray-light: #f4f5f9;
   $orange-primary: #e74c3c;
 body{
   color:$gray-medio;
@@ -88,16 +89,16 @@ body{
     border: 1px solid #fff;
   }
   .btn-secon:hover{
-    background: #e74c3c;
+    background: $orange-primary;
     color: #fff;
   }
 
   .btn-prima{
-    background: #e74c3c;
+    background: $orange-primary;
   }
 
 .separador{
-  background: #e74c3c;
+  background: $orange-primary;
   width: 10px;
   height: 10px;
   margin: 20px auto;
@@ -502,20 +503,53 @@ margin-bottom: 70px;
 
 .cards {
   margin: 0 auto;
+  padding: 0 20px;
 }
 .card {
-  padding: 0 20px;
   max-width: 400px;
+  position: relative;
+  background: $gray-light;
+  z-index: -2;
 }
+
+.card::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background: rgba($gray-medio, 0.7);
+  z-index: -1;
+}
+.premiun .card::before{
+  background: $orange-primary;
+}
+
 .precio {
-  border: 10px solid rgba($gray-medio, 0.3);
   width: 150px;
   height: 150px;
   margin: 30px auto;
   border-radius: 50%;
+  border: 1px solid rgba($gray-medio, 0.2);
+  box-shadow: 0px 0px 0px 10px rgba(244,245,249,0.3);
+  background: white;
+  transition: all 1s;
+}
+.precio:hover{
+  transform: scale(1.1);
 }
 .precio h2{
   margin-top: 30px;
+}
+.premiun .precio h2{
+  color: $orange-primary;
+}
+.precio p{
+  font-size: 0.941rem;
+}
+
+.card .card-text{
+  line-height: 33px;
+
 }
 
 
