@@ -56,6 +56,11 @@ p {
   font-family: 'source_sans_proregular';
 }
 
+a:hover {
+  text-decoration: none;
+  color: #F5F5F5;
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -124,6 +129,13 @@ p {
   background: #F5F5F5;
   top: 5px;
   right: 20px;
+}
+
+.separador2 {
+  margin: 10px 50px;
+  width: 50px;
+  height: 3px;
+  background: #F5F5F5;
 }
 
 .separador3 {
@@ -651,7 +663,64 @@ header span {
 }
 
 .others .img-others .inner {
-  padding: 20px;
+  padding: 20px 0;
+}
+
+/*
+*************************************
+        | section Blog
+*************************************
+*/
+.blog h2 {
+  margin-bottom: 20px;
+}
+
+.blog-img {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.blog-img img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.blog-text {
+  height: 100%;
+  padding: 0;
+  background: #e74c3c;
+  position: relative;
+}
+
+.eyelash::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 40%;
+  right: -25px;
+  background: #e74c3c;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.blog-text p {
+  padding: 10px 50px;
+  font-size: 0.941rem;
+  line-height: 2;
+  color: #F5F5F5;
+}
+
+.blog-text p:first-child {
+  padding-top: 50px;
+}
+
+.blog-text h3, a {
+  padding: 0px 50px;
+  color: #F5F5F5;
 }
 
 /*
