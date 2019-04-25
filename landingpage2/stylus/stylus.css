@@ -636,11 +636,22 @@ header span {
   display: block;
 }
 
+.others p {
+  margin: 20px 0px 20px 0px;
+  font-size: 0.941rem;
+}
+
 .others .img-others {
-  width: 100px;
-  height: 180px;
-  margin-bottom: 10px;
-  border: 10px solid #f4f5f9;
+  max-width: 280px;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid #f4f5f9;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.others .img-others .inner {
+  padding: 20px;
 }
 
 /*
