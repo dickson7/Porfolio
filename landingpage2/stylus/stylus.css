@@ -725,6 +725,35 @@ header span {
 
 /*
 *************************************
+        | section contact
+*************************************
+*/
+.contact h3 {
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin-bottom: 40px;
+}
+
+.data-contact {
+  width: 96%;
+  height: 100%;
+  background: #F5F5F5;
+  margin: 0px 30px;
+  padding: 80px;
+}
+
+.form-contact {
+  width: 90%;
+  height: 100%;
+  background: #F5F5F5;
+  padding: 80px;
+}
+
+/*
+*************************************
         | RESPOSIVE
 *************************************
 */
