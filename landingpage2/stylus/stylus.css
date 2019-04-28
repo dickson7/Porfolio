@@ -208,16 +208,17 @@ header span {
 *************************************
 */
 .main-banner {
+  height: 95vh;
+  width: 100%;
   background: url(../recursos/img/Background.png) no-repeat center center;
-  height: 100vh;
   background-size: cover;
   position: relative;
 }
 
 .home {
   height: 100%;
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   display: block;
   color: white;
 }
@@ -234,6 +235,7 @@ header span {
 }
 
 .scrooldown a {
+  margin: -40px;
   font-size: 25px;
   color: #e74c3c;
 }
@@ -389,15 +391,16 @@ header span {
   color: #797979;
   text-decoration: none;
   cursor: pointer;
-  margin-right: 30px;
+  margin-right: 10px;
   font-family: 'montserratregular';
   font-size: 0.8125rem;
   letter-spacing: 1px;
+  padding: 0px 15px;
 }
 
 .links-porfolio a::after {
   content: "/";
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 /*
@@ -750,6 +753,262 @@ header span {
   height: 100%;
   background: #F5F5F5;
   padding: 80px;
+}
+
+.name {
+  width: 100%;
+  position: relative;
+  height: 60px;
+}
+
+.name input {
+  width: 100%;
+  height: 100%;
+  color: #6a6a6a;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background: #f4f5f9;
+}
+
+.name label {
+  position: absolute;
+  margin-bottom: 0px;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #797979;
+}
+
+.name label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 0%;
+  border-bottom: 2px solid #e74c3c;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.name input:focus + .label-name .content-name,
+.name input:valid + .label-name .content-name {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 14px;
+  color: #e74c3c;
+}
+
+.name input:focus + .label-name::after,
+.name input:valid + .label-name::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  width: 100%;
+}
+
+.email {
+  width: 100%;
+  position: relative;
+  height: 60px;
+}
+
+.email input {
+  width: 100%;
+  height: 100%;
+  color: #6a6a6a;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background: #f4f5f9;
+}
+
+.email label {
+  position: absolute;
+  margin-bottom: 0px;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #797979;
+}
+
+.email label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 0%;
+  border-bottom: 2px solid #e74c3c;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.content-email {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.email input:focus + .label-email .content-email,
+.email input:valid + .label-email .content-email {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 14px;
+  color: #e74c3c;
+}
+
+.email input:focus + .label-email::after,
+.email input:valid + .label-email::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  width: 100%;
+}
+
+.subjet {
+  width: 100%;
+  position: relative;
+  height: 60px;
+}
+
+.subjet input {
+  width: 100%;
+  height: 100%;
+  color: #6a6a6a;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background: #f4f5f9;
+}
+
+.subjet label {
+  position: absolute;
+  margin-bottom: 0px;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #797979;
+}
+
+.subjet label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 0%;
+  border-bottom: 2px solid #e74c3c;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.content-subjet {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.subjet input:focus + .label-subjet .content-subjet,
+.subjet input:valid + .label-subjet .content-subjet {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 14px;
+  color: #e74c3c;
+}
+
+.subjet input:focus + .label-subjet::after,
+.subjet input:valid + .label-subjet::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  width: 100%;
+}
+
+.message {
+  width: 100%;
+  position: relative;
+  height: 200px;
+}
+
+.message textarea {
+  width: 100%;
+  height: 100%;
+  color: #6a6a6a;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background: #f4f5f9;
+}
+
+.message label {
+  position: absolute;
+  margin-bottom: 0px;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #797979;
+}
+
+.message label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 0%;
+  border-bottom: 2px solid #e74c3c;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.content-message {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.message textarea:focus + .label-message .content-message,
+.message textarea:valid + .label-message .content-message {
+  -webkit-transform: translateY(-800%);
+          transform: translateY(-800%);
+  font-size: 14px;
+  color: #e74c3c;
+}
+
+.message textarea:focus + .label-message::after,
+.message textarea:valid + .label-message::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  width: 100%;
 }
 
 /*

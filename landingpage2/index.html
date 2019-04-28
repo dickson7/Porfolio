@@ -570,11 +570,32 @@
 				<div class="form-contact">
 
 				<form action="" class="form d-flex flex-column">
-					<input type="text"placeholder="Nane">
-					<input type="email"placeholder="Email">
-					<input type="email"placeholder="Subjet">
-					<textarea name="textarea" placeholder="Messaje" rows="7" cols="40"></textarea>
-					<button type="submit">Send Message</button>
+						<div class="name">
+								<input type="text" name="name" autocomplete="off" required>
+								<label for="name" class="label-name">
+										<span class="content-name">Name</span>
+								</label>
+						</div>
+					<div class="email">
+							<input type="text" autocomplete="off" required>
+							<label for="email" class="label-email">
+								<span class="content-email">Email</span>
+							</label>
+					</div>
+					<div class="subjet">
+							<input type="text" autocomplete="off" required>
+							<label for="subjet" class="label-subjet">
+								<span class="content-subjet">Subjet</span>
+							</label>
+					</div>
+					<div class="message">
+							<textarea name="textarea" rows="7" cols="40" autocomplete="off" required></textarea>
+							<label for="message" class="label-message">
+								<span class="content-message">Message</span>
+							</label>
+					</div>
+					
+					<button type="submit" >Send Message</button>
 				</form>
 			</div>
 		</div>
