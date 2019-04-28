@@ -1011,6 +1011,11 @@ header span {
   width: 100%;
 }
 
+.form-contact .btn {
+  width: 50%;
+  margin: 20px auto;
+}
+
 /*
 *************************************
         | RESPOSIVE
