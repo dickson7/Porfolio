@@ -984,8 +984,8 @@ header span {
   border-bottom: 2px solid #e74c3c;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .content-message {
