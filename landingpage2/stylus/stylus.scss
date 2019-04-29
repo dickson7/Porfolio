@@ -86,7 +86,7 @@ body{
   }
   .btn:hover{
     color: #fff;
-    transform: scale(1.001);
+    transform: translateY(-10%);
     font-size: 0.8925rem;
   }
 
@@ -202,7 +202,7 @@ header span{
 */
 
 .main-banner{
-  height: 95vh;
+  min-height: 95vh;
   width: 100%;
   background: url(../recursos/img/Background.png) no-repeat center center;
   background-size: cover;
@@ -292,6 +292,12 @@ header span{
   border-left: 6px solid $orange-primary;
   padding: 0 30px;
   margin-bottom: 70px;
+}
+
+.img-history{
+  width: 90%;
+  margin: 20px;
+  
 }
 
 
@@ -457,14 +463,18 @@ header span{
 .img-case{
   position: relative;
 }
+.img-case img{
+  width: 100%;
+  height: 700px;
+}
 .cases{
   background: $white-egg;
   position: absolute;
   padding: 50px 0;
-  width: 600px;
+  min-width: 600px;
   height: 600px;
-  right: -15%;
-  top: 75px;
+  left: 25%;
+  top: 5%;
   z-index: 3;
   box-shadow: 0px 25px 42px rgba(0, 0, 0, .2);
 }
@@ -526,7 +536,10 @@ margin-bottom: 70px;
   position: relative;
   background: $gray-light;
   z-index: -2;
+  transition: all 0.3s ease;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
 }
+
 
 .card::before{
   content: "";
@@ -638,6 +651,11 @@ margin-bottom: 70px;
 .others .img-others .inner {
   padding: 20px 0;
 }
+
+.img-others:hover {
+  transform: scale(1.05);
+}
+
 
  /*
 *************************************
@@ -988,6 +1006,7 @@ margin-bottom: 70px;
 
 .trivial{
   color: $white-egg;
+  padding: 70px 0 0 0;
 }
 .trivial h2{
   margin-bottom: 20px;
@@ -1010,11 +1029,29 @@ margin-bottom: 70px;
 *************************************
 */
 
+footer{
+  background: black;
+}
+.media{
+  width: 100%;
+  margin: 40px 30px; 
+}
+.media a{
+  padding: 0 15px;
+}
+.media a:hover{
+  color: $orange-primary;
+}
 
 
+.copyright{
+  padding: 40px 50px;
+}
 
-
-
+.copyright p i{
+  padding: 0px 10px;
+  color: #ff0000;
+}
 
 
   /*
@@ -1036,15 +1073,70 @@ margin-bottom: 70px;
   .text-home p {
     font-size: 0.7rem;
 }
-.scrooldown {
-  right: 45%;
-  bottom: -10px;
+  .scrooldown {
+    right: 45%;
+    bottom: -10px;
+  }
+
+  .img-porfolio img{
+    width: 80%;
+    height: 330px;
+  }
+// History
+.img-history{
+  width: 90%;
+  margin: 20px;
+
 }
 
-.img-porfolio img{
-  width: 80%;
-  height: 330px;
+
+
+
+// services
+.services .img-services {
+  left: 75%;
 }
+.services h4{
+  margin-right: 70px;
+}
+.services p{
+  margin-right: 70px;
+}
+
+//case study
+.case-study .p-tb{
+  padding: 85px 0px 15px 0px;
+}
+.cases {
+  display: block;
+  padding: 0px;
+  max-width: 100%;
+  height: 600px;
+  position: relative;
+  right:0;
+  top:0;
+}
+.img-case{
+  display: block;
+  margin-top: 20px;
+}
+.case-study p {
+  padding: 10px 40px;
+}
+.carousel-item {
+  margin-top: 30px;
+}
+//Blog
+  .eyelash::after{
+    display: none;
+  }
+//footer
+  .media, .copyright{
+    padding: 0;
+    margin: 20px 0px; 
+    display: flex;
+    justify-content: center
+  }
 
 }
 
@@ -1053,5 +1145,37 @@ margin-bottom: 70px;
     width: 50%;
     height: 330px;
   }
+
+// History
+.img-history{
+  width: 90%;
+  margin: 20px;
   
+}
+
+//case study
+.cases {
+  max-width: 100%;
+ top: 80px; 
+ left: 0;
+ height: 500px;
+}
+
+.case-study p {
+  padding: 20px 35px;
+}
+.icon-case {
+  height: 100px;
+}
+
+
+  //contact
+    .data-contact, .form-contact{
+      width: 90%;
+      height: 100%;
+      background: #F5F5F5;
+      margin: 10px 30px;
+      padding: 50px;
+    }
+
 }
