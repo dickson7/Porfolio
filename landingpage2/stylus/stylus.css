@@ -487,9 +487,9 @@ header span {
   background: #F5F5F5;
   position: absolute;
   padding: 50px 0;
-  min-width: 600px;
+  max-width: 600px;
   height: 600px;
-  left: 25%;
+  right: -25%;
   top: 5%;
   z-index: 3;
   -webkit-box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
@@ -552,11 +552,16 @@ header span {
   max-width: 400px;
   position: relative;
   background: #f4f5f9;
-  z-index: -2;
+  z-index: 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  -webkit-transform: translateY(-1%);
+          transform: translateY(-1%);
 }
 
 .card::before {
@@ -1173,7 +1178,8 @@ footer {
   .eyelash::after {
     display: none;
   }
-  .media, .copyright {
+  .trivial
+.media, .copyright {
     padding: 0;
     margin: 20px 0px;
     display: -webkit-box;
@@ -1195,10 +1201,10 @@ footer {
     margin: 20px;
   }
   .cases {
-    max-width: 100%;
+    max-width: 500px;
     top: 80px;
-    left: 0;
-    height: 500px;
+    left: 50px;
+    height: 550px;
   }
   .case-study p {
     padding: 20px 35px;
