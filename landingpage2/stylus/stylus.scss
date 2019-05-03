@@ -626,7 +626,7 @@ margin-bottom: 70px;
 .main-team ul li:nth-child(1) {
   position: absolute;
   left: 18%;
-  top: 50%;
+  top: 47%;
 }
 .main-team ul li:nth-child(2) {
   position: absolute;
@@ -647,7 +647,7 @@ margin-bottom: 70px;
 .main-team ul li:nth-child(5) {
   position: absolute;
   left: 78%;
-  top: 40%;
+  top: 50%;
 }
 
 .img-team img{
@@ -1126,6 +1126,14 @@ footer{
     width: 80%;
     height: 330px;
   }
+
+  // team
+  .main-team ul li:nth-child(1) {
+    position: absolute;
+    left: 8%;
+    top: 40%;
+  }
+
 // History
 .img-history{
   width: 90%;
@@ -1196,6 +1204,11 @@ footer{
 }
 
 @media screen and (max-width:780px){
+
+  // header
+  
+
+
   .img-porfolio img{
     width: 50%;
     height: 330px;

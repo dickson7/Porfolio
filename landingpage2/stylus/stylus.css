@@ -650,7 +650,7 @@ header span {
 .main-team ul li:nth-child(1) {
   position: absolute;
   left: 18%;
-  top: 50%;
+  top: 47%;
 }
 
 .main-team ul li:nth-child(2) {
@@ -674,7 +674,7 @@ header span {
 .main-team ul li:nth-child(5) {
   position: absolute;
   left: 78%;
-  top: 40%;
+  top: 50%;
 }
 
 .img-team img {
@@ -1177,6 +1177,11 @@ footer {
   .img-porfolio img {
     width: 80%;
     height: 330px;
+  }
+  .main-team ul li:nth-child(1) {
+    position: absolute;
+    left: 8%;
+    top: 40%;
   }
   .img-history {
     width: 90%;
