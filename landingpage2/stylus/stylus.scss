@@ -15,6 +15,7 @@
   $gray-primary: #6a6a6a;
   $gray-light: #f4f5f9;
   $orange-primary: #e74c3c;
+
 body{
   color:$gray-medio;
 }
@@ -22,7 +23,7 @@ body{
     padding: 85px 0px 105px 0px ;
   }
 
-
+  
   h4 {
     font-family: 'open_sanssemibold';
     font-size: 1.286rem;
@@ -173,6 +174,10 @@ content: "";
     box-shadow: 0 -1px inset;   
 }
 
+.scroll-header{
+background: rgba($gray-primary, 0.5); 
+transition: all 0.2s ease;  
+}
 
 .logo{
     position: relative;
@@ -194,6 +199,19 @@ header p {
 header span{
     color: var(--white-egg);
 }
+
+.scroll-top{
+  width: 20px;
+  height: 45px;
+  z-index: 10;
+ 
+
+}
+.scroll-top .up{
+  padding: 0;
+  font-size: 30px;
+  color: rgba($gray-medio, 0.5);
+ }
 
 /*
 *************************************

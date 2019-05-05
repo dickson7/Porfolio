@@ -7,3 +7,15 @@
 //     parallax(".parallax", ".trivial", 1);
 //     parallax(".img-trivial", window.scrollY, 0.4);
 // });
+
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 200) {
+        $(".header-area").addClass("scroll-header");
+    }
+    if (scroll < 150) {
+        $(".header-area").removeClass("scroll-header");
+    }
+});
