@@ -1,3 +1,5 @@
+
+
 /*
 *************************************
         | COLORS
@@ -743,11 +745,8 @@ margin-bottom: 70px;
   font-size: 0.941rem;
 }
 .others .img-others{
-  //width: 100px;
-  height: 200px;
-  
-  //margin: 10px;
-  
+  height: 140px;
+  padding: 0;
 }
 
 .others .img-others .inner {
@@ -1227,10 +1226,11 @@ footer{
 .cases {
   display: block;
   padding: 0px;
-  max-width: 100%;
+  max-width: 400px;
   height: 600px;
   position: relative;
-  right:0;
+  right:auto;
+  left: auto;
   top:0;
 }
 .img-case{
@@ -1316,8 +1316,6 @@ footer{
 //case study
 .cases {
   max-width: 500px;
- top: 80px; 
- left: 50px;
  height: 550px;
 }
 
