@@ -171,6 +171,7 @@ align-self: center;
 .card-container .card{
   max-width: 360px;
   margin-top: 16px;
+  padding: 20px;
 }
 
 .card-container .card i{
@@ -186,10 +187,7 @@ align-self: center;
 .sect-title{
   line-height: 2.5
 }
-.sect-porfolio{
-  
-  
-}
+
 .card{
   margin-bottom: 20px;
 }
