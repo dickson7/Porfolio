@@ -161,7 +161,7 @@ a:hover {
 }
 
 .header-area .main-menu .navbar {
-  height: 70px;
+  height: 10vh;
 }
 
 .header-area .main-menu .navbar a {
@@ -292,6 +292,10 @@ header span {
 
 .nav-links li {
   list-style: none;
+}
+
+.nav-links ul {
+  padding: 0px;
 }
 
 /*
@@ -1272,6 +1276,12 @@ footer {
     width: 80%;
     height: 330px;
   }
+  .home {
+    padding-top: 100px;
+  }
+  .whoweare p {
+    padding: 10px 35px;
+  }
   .main-team ul li:nth-child(1) {
     position: absolute;
     left: 8%;
@@ -1310,11 +1320,26 @@ footer {
   .case-study p {
     padding: 10px 40px;
   }
+  .case-study h4 {
+    font-size: 1rem;
+  }
   .carousel-item {
     margin-top: 30px;
   }
+  .card {
+    margin-bottom: 30px;
+  }
+  .princing p {
+    margin: 0 20px;
+  }
+  .others p {
+    margin: 0 20px;
+  }
   .eyelash::after {
     display: none;
+  }
+  .blog-text {
+    padding: 0 0 27px 0;
   }
   .trivial {
     font-size: 90%;
@@ -1394,7 +1419,7 @@ footer {
     width: 90%;
     height: 100%;
     background: #F5F5F5;
-    margin: 10px 30px;
+    margin: 10px auto;
     padding: 50px;
   }
 }

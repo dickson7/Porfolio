@@ -160,7 +160,7 @@ content: "";
   box-shadow: 0 3px 16 0 rgba(0, 0, 0, .1);
 }
 .header-area .main-menu .navbar {
-  height: 70px;
+  height: 10vh;
 }
 .header-area .main-menu .navbar a{
   font-size: 14px;
@@ -183,6 +183,7 @@ content: "";
 background: rgba($gray-primary, 0.5); 
 transition: all 0.2s ease;  
 }
+
 
 .logo{
     position: relative;
@@ -209,9 +210,8 @@ header span{
   width: 20px;
   height: 45px;
   z-index: 10;
- 
-
 }
+
 .scroll-top .up{
   padding: 0;
   font-size: 30px;
@@ -265,6 +265,9 @@ header span{
   list-style: none;
 }
 
+.nav-links ul{
+  padding: 0px;
+}
 /*
 *************************************
         | MAIN-BANNER
@@ -1171,172 +1174,188 @@ footer{
 *************************************
 */
 @media screen and (max-width:480px){
-  h1 {
-    font-size: 2.143rem;
-    line-height: 2.5rem;
-    letter-spacing: 0.4rem;
-  }
+      h1 {
+        font-size: 2.143rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.4rem;
+      }
 
-  h3 {
-    font-size: 1.0rem;
-    line-height: 2.5rem;
-  }
-  .text-home p {
-    font-size: 0.7rem;
-}
-  .scrooldown {
-    right: 45%;
-    bottom: -10px;
-  }
+      h3 {
+        font-size: 1.0rem;
+        line-height: 2.5rem;
+      }
+      .text-home p {
+        font-size: 0.7rem;
+      }
+      .scrooldown {
+        right: 45%;
+        bottom: -10px;
+      }
 
-  .img-porfolio img{
-    width: 80%;
-    height: 330px;
-  }
+      .img-porfolio img{
+        width: 80%;
+        height: 330px;
+      }
 
-  // team
-  .main-team ul li:nth-child(1) {
-    position: absolute;
-    left: 8%;
-    top: 40%;
-  }
+      .home {
+        padding-top: 100px;
+      }
+
+// whoweare
+    .whoweare p {
+      padding: 10px 35px;
+    }
+
+// team
+      .main-team ul li:nth-child(1) {
+        position: absolute;
+        left: 8%;
+        top: 40%;
+      }
 
 // History
-.img-history{
-  width: 90%;
-  margin: 20px;
-
-}
-
-
-
+      .img-history{
+        width: 90%;
+        margin: 20px;
+      }
 
 // services
-.services .img-services {
-  left: 75%;
-}
-.services h4{
-  margin-right: 70px;
-}
-.services p{
-  margin-right: 70px;
-}
+      .services .img-services {
+        left: 75%;
+      }
+      .services h4{
+        margin-right: 70px;
+      }
+      .services p{
+        margin-right: 70px;
+      }
 
 //case study
-.case-study .p-tb{
-  padding: 85px 0px 15px 0px;
-}
-.cases {
-  display: block;
-  padding: 0px;
-  max-width: 400px;
-  height: 600px;
-  position: relative;
-  right:auto;
-  left: auto;
-  top:0;
-}
-.img-case{
-  display: block;
-  margin-top: 20px;
-}
-.case-study p {
-  padding: 10px 40px;
-}
-.carousel-item {
-  margin-top: 30px;
-}
-//Blog
-  .eyelash::after{
-    display: none;
-  }
+      .case-study .p-tb{
+        padding: 85px 0px 15px 0px;
+      }
+      .cases {
+        display: block;
+        padding: 0px;
+        max-width: 400px;
+        height: 600px;
+        position: relative;
+        right:auto;
+        left: auto;
+        top:0;
+      }
+      .img-case{
+        display: block;
+        margin-top: 20px;
+      }
+      .case-study p {
+        padding: 10px 40px;
+      }
+      .case-study h4{
+          font-size: 1rem;
+      }
+      .carousel-item {
+        margin-top: 30px;
+      }
 
-  // trivial
-  .trivial{
-    font-size: 90%;
-  }
-  .trivial h2{
-    font-size: 2rem;
-  }
+//princing
+      .card{
+        margin-bottom: 30px;
+      }
+      .princing p{
+        margin: 0 20px;
+      }
+// others
+      .others p{
+        margin: 0 20px;
+      }
+//Blog
+      .eyelash::after{
+        display: none;
+      }
+      .blog-text {
+        padding: 0 0 27px 0;
+      }
+
+// trivial
+      .trivial{
+        font-size: 90%;
+      }
+      .trivial h2{
+        font-size: 2rem;
+      }
 
 //footer
-  .media, .copyright{
-    padding: 0;
-    margin: 20px 0px; 
-    display: flex;
-    justify-content: center
-  }
-  footer{
-    font-size: 90%;
-  }
+      .media, .copyright{
+        padding: 0;
+        margin: 20px 0px; 
+        display: flex;
+        justify-content: center
+      }
+      footer{
+        font-size: 90%;
+      }
 }
 
 @media screen and (max-width:780px){
 
-  body{
-   // overflow: hidden;
-}
+// header
+      .nav-links{
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 10vh;
+        background-color: rgba($gray-primary, 0.95); 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+       }
+      .burger{
+        display: block;
+      }
+      .nav-links li{
+        opacity: 0;
+      }
+      .nav-active{
+        transform: translateX(0%);
+      }
 
-  // header
-  .nav-links{
-    position: absolute;
-    right: 0;
-    height: 100vh;
-    top: 10vh;
-    background-color: rgba($gray-primary, 0.95); 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
- }
- .burger{
-  display: block;
-}
-
-.nav-links li{
-  opacity: 0;
-}
-
-
-.nav-active{
-  transform: translateX(0%);
-}
-
-  .img-porfolio img{
-    width: 50%;
-    height: 330px;
-  }
+      .img-porfolio img{
+          width: 50%;
+          height: 330px;
+      }
 
 // History
-.img-history{
-  width: 90%;
-  margin: 20px;
-  
-}
+      .img-history{
+        width: 90%;
+        margin: 20px;
+        
+      }
 
 //case study
-.cases {
-  max-width: 500px;
- height: 550px;
-}
+      .cases {
+        max-width: 500px;
+      height: 550px;
+      }
 
-.case-study p {
-  padding: 20px 35px;
-}
-.icon-case {
-  height: 100px;
-}
+      .case-study p {
+        padding: 20px 35px;
+      }
+      .icon-case {
+        height: 100px;
+      }
 
 
-  //contact
-    .data-contact, .form-contact{
-      width: 90%;
-      height: 100%;
-      background: #F5F5F5;
-      margin: 10px 30px;
-      padding: 50px;
-    }
+//contact
+      .data-contact, .form-contact{
+        width: 90%;
+        height: 100%;
+        background: #F5F5F5;
+        margin: 10px auto;
+        padding: 50px;
+      }
 
 }

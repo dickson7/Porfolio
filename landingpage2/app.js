@@ -11,12 +11,18 @@
 
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
-
     if (scroll >= 200) {
         $(".header-area").addClass("scroll-header");
     }
     if (scroll < 150) {
         $(".header-area").removeClass("scroll-header");
+    }
+    if (scroll < 500){
+        $('.scroll-top').css('display','none');
+       // $("#scroll-top").css("diplay", "none");
+    }
+    if (scroll > 500){
+        $('.scroll-top').css('display','block');
     }
 });
 
