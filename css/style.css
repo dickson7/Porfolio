@@ -170,6 +170,7 @@ align-self: center;
 
 .card-container .card{
   max-width: 360px;
+  height: 360px;
   margin-top: 16px;
   padding: 20px;
 }
