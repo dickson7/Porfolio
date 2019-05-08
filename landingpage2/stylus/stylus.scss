@@ -1248,6 +1248,10 @@ footer{
         display: block;
         margin-top: 20px;
       }
+      .img-case img {
+        width: 100%;
+        height: 100%;
+      }
       .case-study p {
         padding: 10px 40px;
       }
@@ -1268,6 +1272,14 @@ footer{
 // others
       .others p{
         margin: 0 20px;
+      }
+
+// Status
+      .status {
+        height: 500px;
+      }
+      .rect {
+        width: 30%;
       }
 //Blog
       .eyelash::after{
@@ -1338,11 +1350,11 @@ footer{
 //case study
       .cases {
         max-width: 500px;
-      height: 550px;
+        height: 550px;
       }
 
       .case-study p {
-        padding: 20px 35px;
+        padding: 10px 35px;
       }
       .icon-case {
         height: 100px;
