@@ -164,7 +164,10 @@ nav{
 *************************************
 */
 .features{
-    height: 100vh;
+   // height: 100vh;
+}
+.features .separador1{
+    margin: 20px auto;
 }
 
 
@@ -193,6 +196,9 @@ nav{
 @media screen and (max-width:780px){
     
     // nav-bar
+    nav{
+        overflow: hidden;
+    }
     .nav-links{
         position: absolute;
         right: 0;
