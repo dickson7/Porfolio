@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*
+*************************************
+        | Colores
+*************************************
+*/
+$black-primary: rgb(0, 0, 0);
+$white-primary: #fff;
+$orage-primary: rgb(219, 97, 15);
+
+
+/*
+*************************************
+        | Nav
+*************************************
+*/
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: $black-primary;
+}
+.logo{
+    height: 100%;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 100px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color:$white-primary;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+.nav-links a:hover{
+    color: $orage-primary;
+    text-decoration: none;
+    position: relative;
+}
+.nav-links a:hover::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $orage-primary;
+    bottom: -10px;
+}
+.burguer{
+    cursor: pointer;
+    display: none;
+}
+
+.burguer div{
+    width: 25px;
+    height: 3px;
+    background-color: $white-primary;
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+/*
+*************************************
+        | RESPOSIVE
+*************************************
+*/
+@media screen and (max-width:480px){
+
+
+
+}
+
+@media screen and (max-width:780px){
+    
+    // nav-bar
+    .nav-links{
+        position: absolute;
+        right: 0;
+        height: 90vh;
+        width: 100%;
+        top: 10vh;
+        background-color: rgba($black-primary, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .burguer{
+        display: block;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-active{
+        transform: translateX(0%);
+    }
+    
+}

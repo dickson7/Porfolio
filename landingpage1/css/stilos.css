@@ -12,7 +12,7 @@ body{
   /* grid-template: repeat(1fr) / 1fr 1fr 1fr; */
   grid-template-columns: [inicio] 1fr [linea1] 1fr [linea2] 1fr [final];
 /*  grid-template-rows: [inicio] 200px [inicio2] 200px [final]; */
-  grid-template-areas: "titulo titulo titulo"
+  grid-template-areas: " titulo titulo titulo"
                         "logo logo logo"
                         "servicio servicio servicio"
                         "opci opci opci"
