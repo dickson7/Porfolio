@@ -198,8 +198,111 @@ nav {
         | Features
 *************************************
 */
+.features {
+  margin-top: 70px;
+}
+
 .features .separador1 {
   margin: 20px auto;
+}
+
+.icon-feature {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #ff8b38;
+  margin: 30px auto;
+  border-radius: 50%;
+  line-height: 70px;
+  color: #ff8b38;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.icon-feature:hover {
+  -webkit-box-shadow: 0px 3px 20px #ff8b38;
+          box-shadow: 0px 3px 20px #ff8b38;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+/*
+*************************************
+        | Princing
+*************************************
+*/
+.princing {
+  background: whitesmoke;
+  padding-top: 70px;
+  margin-top: 30px;
+}
+
+.separador1 {
+  margin: 20px auto;
+}
+
+.princing .row {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.card {
+  width: 19rem;
+  margin: 20px auto 70px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.princing span {
+  font-size: 40px;
+}
+
+.princing li:nth-child(-n+3) {
+  background: black;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.princing li:nth-child(4) {
+  background: #ff8b38;
+  color: #fff;
+}
+
+.princing li:nth-child(5) {
+  line-height: 40px;
+}
+
+/*
+*************************************
+        | Services
+*************************************
+*/
+.services {
+  background-image: url(../imagenes/fondo2.jpg);
+  color: #fff;
+  height: 300px;
+  padding-top: 70px;
+}
+
+.services .btn {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.services .btn:hover {
+  color: #ff8b38;
+  border: 1px solid #ff8b38;
 }
 
 /*
