@@ -291,11 +291,12 @@ nav {
 .services {
   background-image: url(../imagenes/fondo2.jpg);
   color: #fff;
-  height: 300px;
+  height: 320px;
   padding-top: 70px;
 }
 
 .services .btn {
+  margin-top: 30px;
   color: #fff;
   border: 1px solid #fff;
 }
@@ -303,6 +304,320 @@ nav {
 .services .btn:hover {
   color: #ff8b38;
   border: 1px solid #ff8b38;
+}
+
+/*
+*************************************
+        | Contact
+*************************************
+*/
+.contact {
+  margin-top: 70px;
+}
+
+.name {
+  width: 100%;
+  position: relative;
+  height: 60px;
+}
+
+.name input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 25px;
+  border: none;
+  outline: none;
+}
+
+.name label {
+  position: relative;
+  margin-bottom: 0px;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #ff8b38;
+}
+
+.name label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 0%;
+  border-bottom: 2px solid #ff8b38;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.name input:focus + .label-name .content-name,
+.name input:valid + .label-name .content-name {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 14px;
+  color: #ff8b38;
+}
+
+.name input:focus + .label-name::after,
+.name input:valid + .label-name::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  width: 100%;
+}
+
+.email {
+  width: 100%;
+  position: relative;
+  height: 60px;
+}
+
+.email input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 25px;
+  border: none;
+  outline: none;
+}
+
+.email label {
+  position: relative;
+  margin-bottom: 0px;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #ff8b38;
+}
+
+.email label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 0%;
+  border-bottom: 2px solid #ff8b38;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.content-email {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.email input:focus + .label-email .content-email,
+.email input:valid + .label-email .content-email {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 14px;
+  color: #ff8b38;
+}
+
+.email input:focus + .label-email::after,
+.email input:valid + .label-email::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  width: 100%;
+}
+
+.subjet {
+  width: 100%;
+  position: relative;
+  height: 60px;
+}
+
+.subjet input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 25px;
+  border: none;
+  outline: none;
+}
+
+.subjet label {
+  position: relative;
+  margin-bottom: 0px;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #ff8b38;
+}
+
+.subjet label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 0%;
+  border-bottom: 2px solid #ff8b38;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.content-subjet {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.subjet input:focus + .label-subjet .content-subjet,
+.subjet input:valid + .label-subjet .content-subjet {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 14px;
+  color: #ff8b38;
+}
+
+.subjet input:focus + .label-subjet::after,
+.subjet input:valid + .label-subjet::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  width: 100%;
+}
+
+.message {
+  width: 100%;
+  position: relative;
+  height: 180px;
+}
+
+.message textarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 25px;
+  border: none;
+  outline: none;
+}
+
+.message label {
+  position: relative;
+  margin-bottom: 0px;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #ff8b38;
+}
+
+.message label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 0%;
+  border-bottom: 2px solid #ff8b38;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.content-message {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.message textarea:focus + .label-message .content-message,
+.message textarea:valid + .label-message .content-message {
+  -webkit-transform: translateY(-750%);
+          transform: translateY(-750%);
+  font-size: 14px;
+  color: #ff8b38;
+}
+
+.message textarea:focus + .label-message::after,
+.message textarea:valid + .label-message::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  width: 100%;
+}
+
+.contact a {
+  margin-top: 30px;
+  margin-bottom: 70px;
+  color: #fff;
+  background-color: #ff8b38;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.contact a:hover {
+  color: whitesmoke;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+/*
+*************************************
+        | Footer
+*************************************
+*/
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+.footer a:hover {
+  color: #ff8b38;
+}
+
+.footer p {
+  font-size: small;
 }
 
 /*
