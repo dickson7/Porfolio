@@ -30,4 +30,5 @@ function parallax(element, distance, speed){
 
 window.addEventListener("scroll", function(){
     parallax(".parallax-content", window.scrollY, 0.24);
+
 });

@@ -644,14 +644,11 @@ nav {
 }
 
 @media screen and (max-width: 780px) {
-  nav {
-    overflow: hidden;
-  }
   .nav-links {
     position: absolute;
     right: 0;
     height: 90vh;
-    width: 100%;
+    width: 0%;
     top: 10vh;
     background-color: rgba(0, 0, 0, 0.9);
     display: -webkit-box;
@@ -666,10 +663,8 @@ nav {
             align-items: center;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.5s ease-in;
-    transition: -webkit-transform 0.5s ease-in;
-    transition: transform 0.5s ease-in;
-    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     z-index: 10;
   }
   .burguer {
@@ -681,6 +676,7 @@ nav {
   .nav-active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+    width: 100%;
   }
   .parallax-content h1 {
     font-size: 2.0rem;
