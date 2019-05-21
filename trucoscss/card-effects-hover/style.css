@@ -73,6 +73,7 @@ body{
     padding: 0;
     font-style: 45px;
 }
+
 .box .content-box p{
     margin: 10px 0 0;
     padding: 0;
@@ -81,6 +82,7 @@ body{
     transition: 0.5s;
     text-align: justify;
 }
+
 .box:hover .content-box p{
     opacity: 1;
     transition-delay: 0.4s;
