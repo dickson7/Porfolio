@@ -4,7 +4,7 @@ function parallax(element, distance, speed){
 }
 
 window.addEventListener("scroll", function(){
-    parallax("header", window.scrollY, 1);
+    parallax("header", window.scrollY, 0.9);
     parallax(".small-rose", window.scrollY, 0.4);
     parallax(".big-rose", window.scrollY, 0.2);
 });
