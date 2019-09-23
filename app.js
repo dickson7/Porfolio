@@ -18,3 +18,18 @@ let letter = '';
     }
     setTimeout(type, 300);
 }());
+
+
+const porfolio = document.getElementById("item-porfolio");
+// Agregar listener
+porfolio.addEventListener("click", function(evento){
+	var porfilioContent = document.getElementById("porfolio-content");
+    porfilioContent.classList.add('show');
+});
+
+const studies = document.getElementById("item-studies");
+// Agregar listener
+studies.addEventListener("click", function(evento){
+	var porfilioContent = document.getElementById("studies-content");
+    porfilioContent.classList.add('show');
+});
