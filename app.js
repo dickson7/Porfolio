@@ -1,35 +1,18 @@
-const texts = ['Back-end Developer', 'Systems Engineer'];
-let count = 0;
-let index = 0;
-let currentText = '';
-let letter = '';
+document.getElementById('year').textContent = new Date().getFullYear();
 
-(function type(){
-    if (count === texts.length){
-        count = 0;
-    }
-    currentText = texts[count];
-    letter = currentText.slice(0, ++index);
-
-    document.querySelector('.typing').textContent = letter;
-    if (letter.length === currentText.length){
-        count++;
-        index = 0;
-    }
-    setTimeout(type, 300);
-}());
-
-
-const porfolio = document.getElementById("item-porfolio");
-// Agregar listener
-porfolio.addEventListener("click", function(evento){
-	var porfilioContent = document.getElementById("porfolio-content");
-    porfilioContent.classList.add('show');
-});
-
-const studies = document.getElementById("item-studies");
-// Agregar listener
-studies.addEventListener("click", function(evento){
-	var porfilioContent = document.getElementById("studies-content");
-    porfilioContent.classList.add('show');
-});
+// Aparición suave de cada bloque al llegar a él
+const blocks = document.querySelectorAll('.project, .timeline li, .split > div, .contact');
+if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+    blocks.forEach((block) => {
+        block.classList.add('reveal');
+        observer.observe(block);
+    });
+}

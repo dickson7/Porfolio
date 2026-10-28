@@ -1,358 +1,266 @@
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="es">
+<head>
   <!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7HH2MFJ0M3"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HH2MFJ0M3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HH2MFJ0M3');
+  </script>
 
-	gtag('config', 'G-7HH2MFJ0M3');
-	</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dickson García · Desarrollador de software</title>
+  <meta name="description" content="Dickson García, ingeniero de sistemas y desarrollador back-end con Python. Creador de Garza (domicilios en Arauquita) y Ganadero al Día (app para el control ganadero).">
+  <meta name="theme-color" content="#0e1116">
+  <link rel="canonical" href="https://www.dicksongarcia.com/">
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="theme-color" content="#186cae">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.dicksongarcia.com/">
+  <meta property="og:title" content="Dickson García · Desarrollador de software">
+  <meta property="og:description" content="Back-end con Python y apps web completas: Garza y Ganadero al Día, hechas en Colombia para gente real.">
+  <meta property="og:image" content="https://www.dicksongarcia.com/img/proyectos/garza.jpg">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/resposive.css">
-	<link rel="shortcut icon" href="img/dick.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="icon" href="img/dick.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 
-	
-    <title>Dickson Garcia - Developer</title>
-  </head>
-  <body>
-  		<!-- Header -->
-			<header class="header-area fixed-top">
-			    <div class="main-menu">
-			      <nav class="navbar">
-			        <div class="container">
-			          <div class="nav ml-auto mr-auto mr-md-0">
-			            <li class="nav-item active"><a href="#main-info" class="nav-link"><i class="fas fa-home"></i></a></li>
-			            <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
-			            <li class="nav-item" id="item-studies"><a href="#studies" class="nav-link">Educación</a></li>
-			            <li class="nav-item submenu dropdown">
-			              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-			                Proyectos
-			              </a>
-			              <ul class="dropdown-menu">
-			                <li class="nav-item" id="item-porfolio"><a href="#portfolio" class="nav-link">Portafolio</a></li>
-			                <li class="nav-item"><a href="https://github.com/dickson7" target="_blank" class="nav-link">GitHub</a></li>
-			                <li class="nav-item"><a href="static/CV-dicksongarcia.pdf" target="_blank" class="nav-link">Descargar CV</a></li>
-			              </ul>
-			            </li>
-			          </div>
-			        </div>
-			      </nav>
-			    </div>
-			</header>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dickson García",
+    "jobTitle": "Desarrollador de software",
+    "url": "https://www.dicksongarcia.com/",
+    "sameAs": ["https://www.linkedin.com/in/dicksongarcia/", "https://github.com/dickson7"]
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__in">
+      <a href="#inicio" class="brand">Dickson<span>.</span></a>
+      <nav class="nav" aria-label="Secciones">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto" class="nav__cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
-  		<!-- ./ Header -->
+  <main>
+    <!-- Inicio -->
+    <section class="hero wrap" id="inicio">
+      <div class="hero__text">
+        <p class="eyebrow">Ingeniero de sistemas · Colombia</p>
+        <h1>Hola, soy Dickson. Construyo software que <em>la gente usa</em>.</h1>
+        <p class="lead">
+          Senior Software Developer en Ammper Energía, donde lidero un equipo y construyo
+          servicios con Python y AWS. En mis tiempos libres creo apps web completas de punta a punta, y las más
+          recientes resuelven problemas reales de mi región: domicilios para el comercio de
+          Arauquita y el control de fincas ganaderas.
+        </p>
+        <div class="hero__actions">
+          <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+          <a href="#contacto" class="btn">Hablemos</a>
+        </div>
+        <ul class="socials" aria-label="Redes">
+          <li><a href="https://www.linkedin.com/in/dicksongarcia/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3v-11zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4v-11z"/></svg>
+            LinkedIn</a></li>
+          <li><a href="https://github.com/dickson7" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+            GitHub</a></li>
+        </ul>
+      </div>
+      <figure class="hero__photo">
+        <img src="img/dicksongarcia.jpg" alt="Foto de Dickson García" width="853" height="1280">
+      </figure>
+    </section>
 
-		<!-- Main Info -->
-			<section class="main-info bg-grad" id="main-info">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 col-md-5 col-xl-6 img-col d-flex align-items-center">
-							<div class="img-container d-flex justify-content-center">
-								<img src="img/dicksongarcia.jpg" alt="">
-							</div>
-						</div>	
-						<div class="col-12 col-md-7 col-xl-6 txt-col align-items-center">
-							<div class="text-container">
-								<h6>Hola, soy</h6>
-								<h3 class="sect-title text-uppercase">Dickson Garcia</h3>
-								<h4 class="text-uppercase typing"></h4>
-								<p>Me gustan los retos por eso cada día trato de superar el anterior. 
-									En la tecnología está el presente y futuro por eso me gusta aprender de ella constantemente.
-									El tiempo corre y hay que aprovecharlo al máximo de manera equilibrada.</p>
-								<ul class="list-unstyled basic-info">
-									<li><i class="fas fa-map-marker-alt"></i>Remoto - Colombia</li>
-								</ul>    
-								<ul class="list-inline social-mw">
-									<!-- <li class="list-inline-item"><a href="https://www.instagram.com/dicksongarcia1712/" target="_blank" class="media"><i class="fab fa-instagram"></i></a></li> -->
-									<li class="list-inline-item"><a href="https://www.linkedin.com/in/dicksongarcia/" target="_blank" class="media"><i class="fab fa-linkedin"></i></a></li>
-									<li class="list-inline-item"><a href="https://github.com/dickson7" target="_blank" class="media"><i class="fab fa-github"></i></a></li>
-								</ul>
-							</div>
-							<div class="text-container">
-								<div>
-									<h4 class="mb-4 mt-4">Ultimo desarrollo... <a href="https://github.com/dickson7/centralis"><small>ver</small></h4>
-									<p></a> </p>
-								</div>
-								<div>
-									<h4 class="mb-4 mt-4">Tecnologías en las que he trabajado</h4>
-								</div>
-								<div class="wrapper-body">
-									<article class="wrapper">
-										<div class="marquee">
-										<div class="marquee__group">
-											<p>Python</p> 
-											<p>Django</p> 
-											<p>Postgres</p> 
-											<p>Docker</p> 
-											<p>Mongo</p> 
-											<p>Fastapi</p> 
-											<p>Power BI</p> 
-											<p>JavaScript</p>  
-										</div>
-									
-										<div aria-hidden="true" class="marquee__group">
-											<p>Python</p> 
-											<p>Django</p> 
-											<p>Postgres</p> 
-											<p>Docker</p> 
-											<p>Mongo</p> 
-											<p>Fastapi</p> 
-											<p>Power BI</p> 
-											<p>JavaScript</p>  
-										</div>
-										</div>
-									
-										<div class="marquee marquee--reverse">
-										<div class="marquee__group">
-											<p>Python</p> 
-											<p>Django</p> 
-											<p>Postgres</p> 
-											<p>Docker</p> 
-											<p>Mongo</p> 
-											<p>Fastapi</p> 
-											<p>Power BI</p> 
-											<p>JavaScript</p>  
-										</div>
-									
-										<div aria-hidden="true" class="marquee__group">
-											<p>Python</p> 
-											<p>Django</p> 
-											<p>Postgres</p> 
-											<p>Docker</p> 
-											<p>Mongo</p> 
-											<p>Fastapi</p> 
-											<p>Power BI</p> 
-											<p>JavaScript</p> 
-										</div>
-										</div>
-									</article>
-  
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				
-			</section>
-<!-- ./Main info -->
+    <!-- Proyectos -->
+    <section class="section wrap" id="proyectos">
+      <header class="section__head">
+        <p class="eyebrow">Proyectos destacados</p>
+        <h2>Productos publicados, hechos para gente real</h2>
+      </header>
 
-<!-- Skills -->
-			<!-- <section class="sect skills" id="skills">
-				<div class="container">
-					<div class="head content d-flex align-items-baseline">
-							<button class="btn" type="button" data-toggle="collapse" data-target="#skills-content" 
-							aria-expanded="false" aria-controls="porfolio-content">
-								<i class="far fa-plus-square"></i>
-							</button>
-						<h3 class="sect-title">Habilidades</h3>
-					</div>
-					<div class="row" id="skills-content">
-						<div class="skills-col col-12 col-md-6">
-							<h4 class="sect-subtitle">Desarrollo de software</h4>
-							<div class="skills-item">
-								<p class="text">HTML</p>
-								<div class="progress">
-									<div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100">99%</div>
-								</div>
-								<p class="text">CSS</p>
-								<div class="progress">
-									<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
-								</div>
-								<p class="text">JavaScript</p>
-								<div class="progress">
-									<div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
-								</div>
-								<p class="text">Git</p>
-								<div class="progress">
-									<div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">78%</div>
-								</div>
-							</div>
-						</div>
-						<div class="skills-col col-12 col-md-6">
-							<h4 class="sect-subtitle">Otras</h4>
-							<div class="skills-item">
-								<p class="text">Support IT</p>
-								<div class="progress">
-									<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-								</div>
-								<p class="text">Administración de la tecnología de la información</p>
-								<div class="progress">
-									<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-								</div>
-								<p class="text">Power BI</p>
-								<div class="progress">
-									<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-								</div>
-								<p class="text">Python</p>
-								<div class="progress">
-									<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section> -->
-<!-- ./Skills -->
-		
-<!-- Porfolio -->
-<section class="sect-porfolio" id="portfolio">
-	<div class="container">
-		<div class="head-content d-flex align-items-baseline">
-			<button class="btn" type="button" data-toggle="collapse" data-target="#porfolio-content" 
-			aria-expanded="true" aria-controls="porfolio-content">
-				<i class="far fa-plus-square"></i>
-			</button>
-			<h3 class="sect-title">Proyectos destacados</h3>
-		</div>
-	</div>
+      <article class="project">
+        <a class="project__shot" href="https://garza-arauquita.netlify.app/" target="_blank" rel="noopener">
+          <img src="img/proyectos/garza.jpg" alt="Pantalla de inicio de Garza" loading="lazy" width="1100" height="687">
+        </a>
+        <div class="project__body">
+          <p class="project__tag">2026 · App web instalable (PWA)</p>
+          <h3>Garza <span>· Arauquita, Arauca</span></h3>
+          <p>
+            Plataforma local de domicilios y comercio: restaurantes, panaderías, droguerías y
+            tiendas de Arauquita, más mandados, transporte en motocarro y agenda de citas con
+            estéticas y talleres. Hecho en Arauquita, para Arauquita.
+          </p>
+          <ul class="bullets">
+            <li>Cuatro paneles: cliente, comercio, domiciliario y administrador.</li>
+            <li>Pedidos al instante y notificaciones push a comercios y domiciliarios.</li>
+            <li>Se instala en el celular como una app, sin pasar por tiendas.</li>
+          </ul>
+          <ul class="chips">
+            <li>React</li><li>TypeScript</li><li>Vite</li><li>Supabase</li><li>PostgreSQL</li><li>Web Push</li><li>Netlify</li>
+          </ul>
+          <a class="btn btn--primary" href="https://garza-arauquita.netlify.app/" target="_blank" rel="noopener">Ver Garza en vivo ↗</a>
+        </div>
+      </article>
 
-	<div class="container col-md-6 collapse" id="porfolio-content">
-		<div class="card-container d-flex flex-wrap justify-content-around align-items-center">
-			<div class="card">
-				<div class="casd-body">
-					<i class="fas fa-server"></i>
-					<h5 class="card-title">Centralis App</h5>
-					<p class="card-text">Todas tus cuentas bancarias en un solo lugar. Conecta con las diferenten entidades bancarias 
-						permitiendo ver todos los movimientos en una sola app.
-					</p>
-					<a href="https://github.com/dickson7/centralis" class="btn btn-primary">Ver mas...</a>
-				</div>
-			</div>
-			<div class="card">
-				<div class="casd-body">
-					<i class="fas fa-server"></i>
-					<h5 class="card-title">App List of tasks</h5>
-					<p class="card-text">App en Django para la gestion de tareas. Se ingrese con registro de usuario. 
-						Autenticación por token enviado por correo. Te invito a registrar y probar el desarrollo.
-					</p>
-					<a href="https://github.com/dickson7/ToDo" class="btn btn-primary">Ver mas...</a>
-				</div>
-			</div>
-			<div class="card">
-				<div class="casd-body">
-					<i class="fas fa-columns"></i>
-					<h5 class="card-title">Landing Page AXIT</h5>
-					<p class="card-text">Página web creada en referencia a plantilla gratuita. Brinda toda la 
-						información de servicios, productos y precios. 
-					</p>
-					<a href="./landingpage1/index.html" class="btn btn-primary">Ver mas...</a>
-				</div>
-			</div>
+      <article class="project project--flip">
+        <a class="project__shot" href="https://ganadero-al-dia.netlify.app/" target="_blank" rel="noopener">
+          <img src="img/proyectos/ganadero.jpg" alt="Pantalla de inicio de Ganadero al Día" loading="lazy" width="1100" height="687">
+        </a>
+        <div class="project__body">
+          <p class="project__tag">2026 · App web instalable (PWA)</p>
+          <h3>Ganadero al Día <span>· control ganadero</span></h3>
+          <p>
+            App para que el ganadero lleve sus fincas, lotes y animales bovinos y bufalinos,
+            de leche o de ceba: producción diaria, pesajes, preñeces, partos, vacunas, gastos
+            y cuánto le deja cada lote, cada finca y todo el negocio.
+          </p>
+          <ul class="bullets">
+            <li>Alertas de reproducción: días abiertos, palpaciones, partos, secado y destete.</li>
+            <li>Enlaces de un solo uso por WhatsApp para el veterinario y el ordeñador.</li>
+            <li>Calculadoras ganaderas gratis, pensadas para atraer visitas desde Google.</li>
+          </ul>
+          <ul class="chips">
+            <li>React</li><li>TypeScript</li><li>Vite</li><li>Supabase</li><li>PostgreSQL</li><li>SEO</li><li>Netlify</li>
+          </ul>
+          <a class="btn btn--primary" href="https://ganadero-al-dia.netlify.app/" target="_blank" rel="noopener">Ver Ganadero al Día ↗</a>
+        </div>
+      </article>
+    </section>
 
-			<div class="card">
-					<div class="casd-body">
-						<i class="fas fa-file-code"></i>
-						<h5 class="card-title">Landing Page BINO</h5>
-						<p class="card-text">Página web creada en referencia a plantilla gratuita. 
-							Brinda toda la información de servicios, productos y precios. Tiene diseño responsivo se 
-							realizó con Bootstrap 4 y animaciones con JavaScript.
-						</p>
-						<a href="./landingpage2/index.html" class="btn btn-primary">Ver mas...</a>
-					</div>
-				</div>
+    <!-- Experiencia -->
+    <section class="section wrap" id="experiencia">
+      <header class="section__head">
+        <p class="eyebrow">Experiencia</p>
+        <h2>De soporte de TI a desarrollo de producto</h2>
+      </header>
 
-			<div class="card">
-					<div class="casd-body">
-						<i class="fas fa-credit-card"></i>
-						<h5 class="card-title">E-commerce</h5>
-						<p class="card-text">Página plantilla de sitio de compras, se puede ver el producto en un 
-							carrusel de imágenes, se puede elegir el color del producto y pasar al formulario de compra 
-							hasta finalizar el proceso.
-						</p>
-						<a href="./ecommerce/index.html" class="btn btn-primary">Ver mas...</a>
-					</div>
-				</div>
+      <ol class="timeline">
+        <li>
+          <p class="timeline__date">Ago 2025 — presente</p>
+          <div>
+            <h3>Senior Software Developer <span>· Ammper Energía</span></h3>
+            <p>Continúo con los servicios back-end en Python sobre AWS para el sector energético, ahora directamente en Ammper, con más responsabilidades y liderando un equipo de desarrollo.</p>
+          </div>
+        </li>
+        <li>
+          <p class="timeline__date">2026 · tiempo libre</p>
+          <div>
+            <h3>Proyectos propios <span>· Garza y Ganadero al Día</span></h3>
+            <p>Diseño, desarrollo y publicación de dos productos propios: modelo de datos y seguridad en Supabase, interfaz web instalable y acompañamiento a los primeros comercios y ganaderos.</p>
+          </div>
+        </li>
+        <li>
+          <p class="timeline__date">Dic 2022 — Sep 2025</p>
+          <div>
+            <h3>Back End Developer <span>· Quo Digital</span></h3>
+            <p>Desarrollo de servicios back-end en Python sobre AWS para una empresa del sector energético: funciones Lambda y APIs, flujos con Step Functions, colas, correos con SES y datos en DynamoDB y RDS.</p>
+          </div>
+        </li>
+        <li>
+          <p class="timeline__date">Jul 2022 — Dic 2022</p>
+          <div>
+            <h3>Back End Developer <span>· Whale &amp; Jaguar (remoto)</span></h3>
+            <p>Desarrollo back-end de productos y soluciones a la medida para la generación automática de contenido, con foco en el usuario y en código eficiente. Back-end del proyecto CopyBot.</p>
+          </div>
+        </li>
+        <li>
+          <p class="timeline__date">Mar 2021 — Jul 2022</p>
+          <div>
+            <h3>Support Engineer Python <span>· Whale &amp; Jaguar (remoto)</span></h3>
+            <p>Monitoreo de la plataforma, investigación y corrección de fallas con Python y React, y acompañamiento de cada versión hasta producción. Reconocido por la funcionalidad de descarga y análisis de hashtags de Instagram.</p>
+          </div>
+        </li>
+        <li>
+          <p class="timeline__date">Ene 2019 — Mar 2021</p>
+          <div>
+            <h3>Applications Solutions Engineer <span>· DDB Colombia, Medellín</span></h3>
+            <p>Puente entre TI y las demás áreas para encontrar soluciones al negocio: modelos de BI en Power BI, administración de motores de bases de datos y monitoreo de respaldos de aplicaciones críticas.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
 
-				<!-- <div class="card">
-						<div class="casd-body">
-							<i class="fas fa-file-code"></i>
-							<h5 class="card-title">CSS</h5>
-							<p class="card-text">Trucos css, es una recopilación de sencillos y complejos ejemplos que vemos 
-								en muchos sitios. Tutoriales y ejercicios random  que llamaron la atención y que se realice 
-								para practicar y luego si es el caso colocarlo en práctica en proyectos reales.
-							</p>
-							<a href="./trucoscss/index.html" class="btn btn-primary">Ver mas...</a>
-						</div>
-					</div>
+    <!-- Habilidades y educación -->
+    <section class="section wrap split" id="habilidades">
+      <div>
+        <header class="section__head">
+          <p class="eyebrow">Habilidades</p>
+          <h2>Con qué trabajo</h2>
+        </header>
+        <div class="skills">
+          <div>
+            <h3>Nube · AWS <span class="skills__note">uso diario</span></h3>
+            <ul class="chips chips--strong"><li>Lambda</li><li>API Gateway</li><li>Step Functions</li><li>SQS</li><li>SES</li><li>DynamoDB</li><li>RDS</li><li>S3</li><li>CloudWatch</li><li>IAM</li></ul>
+          </div>
+          <div>
+            <h3>Back-end y datos</h3>
+            <ul class="chips"><li>Python</li><li>Django</li><li>FastAPI</li><li>PostgreSQL</li><li>MongoDB</li><li>SQL</li><li>Supabase</li></ul>
+          </div>
+          <div>
+            <h3>Front-end</h3>
+            <ul class="chips"><li>React</li><li>TypeScript</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>PWA</li></ul>
+          </div>
+          <div>
+            <h3>Herramientas</h3>
+            <ul class="chips"><li>Git</li><li>Docker</li><li>Netlify</li><li>Power BI</li><li>Desarrollo asistido con IA</li></ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <header class="section__head">
+          <p class="eyebrow">Educación</p>
+          <h2>Formación</h2>
+        </header>
+        <ul class="edu">
+          <li><h3>Ingeniería de Sistemas</h3><p>Instituto Universitario Politécnico Santiago Mariño · 2011 — 2016</p></li>
+          <li><h3>Ruta de Desarrollo Backend</h3><p>Platzi · desde 2021</p></li>
+          <li><h3>Técnico en Informática</h3><p>Instituto Universitario Adventista de Venezuela · 2009</p></li>
+        </ul>
+      </div>
+    </section>
 
-					<div class="card">
-							<div class="casd-body">
-								<i class="fas fa-server"></i>
-								<h5 class="card-title">JavaScript</h5>
-								<p class="card-text">En el camino Front-end nos encontramos con JavaScript, uno de los leguajes
-									 más populares en la industria. Con Javascript podemos programar una app web desde cero. 
-									 Y aquí encontramos varios proyectos o tips, con dificultad 0 hasta 100.
-								</p>
-								<a href="./javascript/index.html" class="btn btn-primary">Ver mas...</a>
-							</div>
-						</div> -->
-		</div>
-	</div>
-</section>
+    <!-- Prácticas anteriores -->
+    <section class="section wrap" id="archivo">
+      <details class="archive">
+        <summary>Prácticas y proyectos anteriores</summary>
+        <ul class="archive__list">
+          <li><a href="https://github.com/dickson7/centralis" target="_blank" rel="noopener">Centralis</a><span>Back-end para ver todas tus cuentas bancarias en un solo lugar · GitHub</span></li>
+          <li><a href="https://github.com/dickson7/ToDo" target="_blank" rel="noopener">App de tareas en Django</a><span>Registro y autenticación con token enviado al correo · GitHub</span></li>
+          <li><a href="landingpage2/index.html">Landing page BINO</a><span>Bootstrap 4 y animaciones con JavaScript</span></li>
+          <li><a href="landingpage1/index.html">Landing page AXIT</a><span>Maquetación a partir de una plantilla</span></li>
+          <li><a href="ecommerce/index.html">E-commerce</a><span>Carrusel de producto y flujo de compra</span></li>
+        </ul>
+      </details>
+    </section>
 
-<!-- ./Porfolio -->
+    <!-- Contacto -->
+    <section class="contact wrap" id="contacto">
+      <h2>¿Tienes una idea o un proceso que <em>se puede hacer mejor</em>?</h2>
+      <p>Escríbeme y lo conversamos.</p>
+      <div class="hero__actions">
+        <a href="mailto:garciadickson@hotmail.com" class="btn btn--primary">garciadickson@hotmail.com</a>
+        <a href="https://www.linkedin.com/in/dicksongarcia/" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+      </div>
+    </section>
+  </main>
 
-<!-- Estudios -->
-<section class="sect-estudios" id="studies">
-			<div class="container">
-					<div class="head-content d-flex align-items-baseline">
-						<button class="btn" type="button" data-toggle="collapse" data-target="#studies-content" 
-						aria-expanded="false" aria-controls="porfolio-content">
-							<i class="far fa-plus-square"></i>
-						</button>
-						<h3 class="sect-title">Estudios</h3>
-					</div>
-				</div>
-	</section>
+  <footer class="footer wrap">
+    <p>© <span id="year">2026</span> Dickson García</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
 
-	<div class="container collapse" id="studies-content">
-			<div class="card">
-					<h5 class="card-header">Ingeniero de Sistemas</h5>
-					<div class="card-body">
-						<h5 class="card-title">Instituto Politécnico Santiago Mariño</h5>
-						<p class="card-text">2016</p>
-					</div>
-				</div>
-				<div class="card">
-						<h5 class="card-header">Técnico en Informática</h5>
-						<div class="card-body">
-							<h5 class="card-title">Instituto Universitario Adventista de Venezuela</h5>
-							<p class="card-text">2009</p>
-						</div>
-					</div>
-	</div>
-
-	<!-- ./Estudios -->
-
-
-
-
-
-
-<!-- footer -->
-<footer>
-	
-</footer>
-<!-- ./footer -->
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		<script src="./app.js"></script>
-  </body>
+  <script src="app.js"></script>
+</body>
 </html>
